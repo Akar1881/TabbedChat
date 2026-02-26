@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "id": "tabbedchat",
+    "version": "${version}",
+    "name": "TabbedChat",
+    "description": "A Fabric mod for easly switch between chats.",
+    "authors": [
+        "JoJo"
+    ],
+    "contact": {
+        "sources": "https://github.com/JoJo/TabbedChat"
+    },
+    "license": "GPL-3.0",
+    "icon": "assets/tabbedchat/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "me.jojo.tabbedchat.TabbedChat"
+        ],
+        "modmenu": [
+            "me.jojo.tabbedchat.compat.ModMenuIntegration"
+        ]
+    },
+    "mixins": [
+        "tabbedchat.mixins.json"
+    ],
+    "accessWidener": "tabbedchat.accesswidener",
+    "depends": {
+        "fabricloader": ">=0.18.0",
+        "minecraft": "~1.21.10",
+        "java": ">=21",
+        "fabric-api": "*"
+    },
+    "suggests": {
+        "modmenu": "*"
+    }
+}
